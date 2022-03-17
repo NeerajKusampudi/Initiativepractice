@@ -11,7 +11,7 @@
     "parameters": {
       "name": {
         "type": "string",
-        "defaultValue": "neerajdf"
+        "defaultValue": "neerajdataf"
       },
       "location": {
         "type": "string",
