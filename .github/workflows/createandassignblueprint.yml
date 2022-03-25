@@ -5,7 +5,6 @@ on:
   
 jobs:
   Create_blueprint:
-    environment: neu-data-ai-platform-dev-rg
     name: Create Blueprint
     runs-on: ubuntu-latest
     steps:
@@ -22,7 +21,7 @@ jobs:
           scope: Subscription
           azureSubscriptionID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           blueprintName: ${{ secrets.blueprintName }}
-          blueprintPath: Blueprints/DA_Accelerator
+          blueprintPath: Blueprints
 
       - name: Assign Azure Blueprint
         uses: neilpeterson/action-assign-blueprint@master
@@ -36,4 +35,4 @@ jobs:
           azureSubscriptionID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           assignmentName: ${{ secrets.assignmentName }}
           blueprintName: ${{ secrets.blueprintName }}
-          AssignmentFilePath: Blueprints/DA_Accelerator/assign.json
+          AssignmentFilePath: Blueprints/assign.json
