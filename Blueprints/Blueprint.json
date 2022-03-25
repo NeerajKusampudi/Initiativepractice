@@ -1,0 +1,22 @@
+{
+    "properties": {
+      "description": "Components for the SQL data and analytics platform.",
+      "targetScope": "subscription",
+      "parameters": {
+        "workspaceName": {
+          "type": "string",
+          "metadata": {
+            "description": "Name of the Azure Region to build the resources. (Ex. 'westus2')"
+          }
+        }
+        
+      },
+      "resourceGroups": {
+        "ResourceGroup":  {
+          "type": "object"
+        }
+      },
+      
+      "blueprintName": "neerajvamshibp"
+    }
+  }

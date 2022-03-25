@@ -1,0 +1,32 @@
+{
+    "identity": {
+        "type": "userAssigned",
+        "tenantId": "687f51c3-0c5d-4905-84f8-97c683a5b9d1",
+        "userAssignedIdentities": {
+          "/subscriptions/8b905a11-e76d-4cf1-9fd3-49bb49d8a7c9/resourceGroups/neerajresource/providers/Microsoft.ManagedIdentity/userAssignedIdentities/neerajidentity": {}
+        }
+    },
+    "location": "westus2",
+    "properties": {
+        "blueprintId": "/subscriptions/8b905a11-e76d-4cf1-9fd3-49bb49d8a7c9/providers/Microsoft.Blueprint/blueprints/neerajvamshibp",
+        "resourceGroups": {
+            "ResourceGroup": {
+              "name": "neerajresource",
+
+              "location": "eastus"
+            }
+        },
+        "locks": {
+            "mode": "none"
+        },    
+        "parameters": {
+        "workspaceName": {
+          "value": "neerajnewworkspace",
+          "metadata": {
+            "description": "3 or 4 character identifier used in resource naming conventions.  (Ex. 'imc')"
+          }
+        }
+       
+      }
+    }
+  }
